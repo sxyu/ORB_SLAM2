@@ -17,13 +17,25 @@
  * You should have received a copy of the GNU General Public License
  * along with ORB-SLAM2. If not, see <http://www.gnu.org/licenses/>.
  */
+
+#include "LocalMapping.h"  // IWYU pragma: associated
+
 #include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "LocalMapping.h"
+#include <math.h>
+#include <stddef.h>
+#include <algorithm>
+#include <iostream>
+#include <map>
+#include <memory>
+#include <utility>
+#include <vector>
+
 #include "LoopClosing.h"
 #include "ORBmatcher.h"
 #include "Optimizer.h"
+#include "KeyFrame.h"
+#include "Map.h"
+#include "MapPoint.h"
 
 #include <mutex>
 

@@ -18,16 +18,15 @@
  * along with ORB-SLAM2. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include <iostream>
 #include <algorithm>
 #include <fstream>
 #include <chrono>
 #include <iomanip>
+#include <unistd.h>
 
 #include <opencv2/core/core.hpp>
+#include <opencv2/imgcodecs/legacy/constants_c.h>
 
 #include "System.h"
 
